@@ -1,4 +1,4 @@
-# responsiveui
+# responsive_ui_by_default
 
 A new Flutter package.
 

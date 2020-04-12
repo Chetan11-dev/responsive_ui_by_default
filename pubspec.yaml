@@ -1,8 +1,8 @@
-name: responsive_ui
+name: responsive_ui_by_default
 description: A new Flutter package.
-version: 0.0.1
-author:
-homepage:
+version: 0.0.3
+author: Chetan Jain
+homepage: https://github.com/Chetan11-dev/responsive_ui_by_default.git
 
 environment:
   sdk: ">=2.1.0 <3.0.0"

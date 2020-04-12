@@ -1,8 +1,9 @@
 import 'package:flutter/widgets.dart';
-import 'package:responsive_ui/Theme/Helpers/layout_helper.dart';
-import 'package:responsive_ui/Theme/ThemeManager.dart';
+import 'package:responsive_ui_by_default/Theme/Helpers/layout_helper.dart';
+import 'package:responsive_ui_by_default/Theme/ThemeManager.dart';
 
 double Function() getScreenWidth, getScreenHeight;
+double Function([double dimension]) getScreenWidthPerc, getScreenHeightPerc;
 
 class Sizer {
   static instantiate(DeviceScreenType dt, double w, double h) {
@@ -26,8 +27,14 @@ class Sizer {
     }
     fach = giver(sh); // singleInvocation(sh, (double i) => i);
     facw = giver(sw); //singleInvocation(sw, (double i) => i);
+
     getScreenWidth = giver(w);
     getScreenHeight = giver(h);
+
+    getScreenWidthPerc =
+        ([double widthPerc = 100]) => widthPerc / 100 * getScreenWidth();
+    getScreenHeightPerc =
+        ([double widthPerc = 100]) => widthPerc / 100 * getScreenHeight();
   }
 }
 

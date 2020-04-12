@@ -51,4 +51,35 @@ class FontTextTheme {
       overline: overline,
     );
   }
+  FontTextTheme.theme(TextTheme t) {
+    display4 = t.display4;
+    display3 = t.display3;
+    display2 = t.display2;
+    display1 = t.display1;
+    headline = t.headline;
+    title = t.title;
+    subhead = t.subhead;
+    body2 = t.body2;
+    body1 = t.body1;
+    caption = t.caption;
+    button = t.button;
+    subtitle = t.subtitle;
+    overline = t.overline;
+
+    textTheme = TextTheme(
+      display4: display4,
+      display3: display3,
+      display2: display2,
+      display1: display1,
+      headline: headline,
+      title: title,
+      subhead: subhead,
+      body2: body2,
+      body1: body1,
+      caption: caption,
+      button: button,
+      subtitle: subtitle,
+      overline: overline,
+    );
+  }
 }
